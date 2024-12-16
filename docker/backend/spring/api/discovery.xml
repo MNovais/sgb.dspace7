@@ -164,9 +164,6 @@
             <list>
                 <ref bean="searchFilterAuthor" />
                 <ref bean="searchFilterSubject" />
-                <ref bean="searchFilterSubjectEn" />
-                <ref bean="searchFilterSubjectEs" />
-                <ref bean="searchFilterSubjectFr" />
                 <ref bean="searchFilterIssued" />
                 <ref bean="searchFilterLocal" />
                 <ref bean="searchFilterRights" />
@@ -183,9 +180,6 @@
                 <ref bean="searchFilterTitle" />
                 <ref bean="searchFilterAuthor" />
                 <ref bean="searchFilterSubject" />
-                <ref bean="searchFilterSubjectEn" />
-                <ref bean="searchFilterSubjectEs" />
-                <ref bean="searchFilterSubjectFr" />
                 <ref bean="searchFilterIssued" />
                 <ref bean="searchFilterLocal" />
                 <ref bean="searchFilterRights" />
@@ -463,9 +457,6 @@
             <list>
                 <ref bean="searchFilterAuthor" />
                 <ref bean="searchFilterSubject" />
-                <ref bean="searchFilterSubjectEn" />
-                <ref bean="searchFilterSubjectEs" />
-                <ref bean="searchFilterSubjectFr" />
                 <ref bean="searchFilterIssued" />
                 <ref bean="searchFilterLocal" />
                 <ref bean="searchFilterRights" />
@@ -481,9 +472,6 @@
                 <ref bean="searchFilterTitle" />
                 <ref bean="searchFilterAuthor" />
                 <ref bean="searchFilterSubject" />
-                <ref bean="searchFilterSubjectEn" />
-                <ref bean="searchFilterSubjectEs" />
-                <ref bean="searchFilterSubjectFr" />
                 <ref bean="searchFilterIssued" />
                 <ref bean="searchFilterLocal" />
                 <ref bean="searchFilterRights" />
@@ -613,9 +601,6 @@
                 <ref bean="searchFilterWithdrawn" />
                 <ref bean="searchFilterAuthor" />
                 <ref bean="searchFilterSubject" />
-                <ref bean="searchFilterSubjectEn" />
-                <ref bean="searchFilterSubjectEs" />
-                <ref bean="searchFilterSubjectFr" />
                 <ref bean="searchFilterIssued" />
                 <ref bean="searchFilterLocal" />
                 <ref bean="searchFilterRights" />
@@ -633,9 +618,6 @@
                 <ref bean="searchFilterTitle" />
                 <ref bean="searchFilterAuthor" />
                 <ref bean="searchFilterSubject" />
-                <ref bean="searchFilterSubjectEn" />
-                <ref bean="searchFilterSubjectEs" />
-                <ref bean="searchFilterSubjectFr" />
                 <ref bean="searchFilterIssued" />
                 <ref bean="searchFilterLocal" />
                 <ref bean="searchFilterRights" />
@@ -2354,57 +2336,7 @@
         <property name="indexFieldName" value="subject"/>
         <property name="metadataFields">
             <list>
-                <value>dc.subject</value>
-            </list>
-        </property>
-        <property name="facetLimit" value="5"/>
-        <property name="sortOrderSidebar" value="COUNT"/>
-        <property name="sortOrderFilterPage" value="COUNT"/>
-        <property name="splitter" value="::"/>
-    </bean>
-
-    <bean id="searchFilterSubjectPt" class="org.dspace.discovery.configuration.HierarchicalSidebarFacetConfiguration">
-        <property name="indexFieldName" value="subjectpt"/>
-        <property name="metadataFields">
-            <list>
-                <value>dc.subject.pt</value>
-            </list>
-        </property>
-        <property name="facetLimit" value="5"/>
-        <property name="sortOrderSidebar" value="COUNT"/>
-        <property name="sortOrderFilterPage" value="COUNT"/>
-        <property name="splitter" value="::"/>
-    </bean>
-
-    <bean id="searchFilterSubjectEn" class="org.dspace.discovery.configuration.HierarchicalSidebarFacetConfiguration">
-        <property name="indexFieldName" value="subjecten"/>
-        <property name="metadataFields">
-            <list>
-                <value>dc.subject.en</value>
-            </list>
-        </property>
-        <property name="facetLimit" value="5"/>
-        <property name="sortOrderSidebar" value="COUNT"/>
-        <property name="sortOrderFilterPage" value="COUNT"/>
-        <property name="splitter" value="::"/>
-    </bean>
-    <bean id="searchFilterSubjectEs" class="org.dspace.discovery.configuration.HierarchicalSidebarFacetConfiguration">
-        <property name="indexFieldName" value="subjectes"/>
-        <property name="metadataFields">
-            <list>
-                <value>dc.subject.es</value>
-            </list>
-        </property>
-        <property name="facetLimit" value="5"/>
-        <property name="sortOrderSidebar" value="COUNT"/>
-        <property name="sortOrderFilterPage" value="COUNT"/>
-        <property name="splitter" value="::"/>
-    </bean>
-    <bean id="searchFilterSubjectFr" class="org.dspace.discovery.configuration.HierarchicalSidebarFacetConfiguration">
-        <property name="indexFieldName" value="subjectfr"/>
-        <property name="metadataFields">
-            <list>
-                <value>dc.subject.fr</value>
+                <value>dc.subject.*</value>
             </list>
         </property>
         <property name="facetLimit" value="5"/>

@@ -1167,7 +1167,7 @@
   "browse.comcol.by.dateissued": "Por Data de Publicação",
 
   // "browse.comcol.by.subject": "By Subject",
-  "browse.comcol.by.subject": "Por Assunto (pt)",
+  "browse.comcol.by.subject": "Por Assunto",
 
   // "browse.comcol.by.srsc": "By Subject Category", (Auto-Translated)
   "browse.comcol.by.srsc": "Por categoria de assunto",
@@ -1203,7 +1203,7 @@
   "browse.metadata.dateissued.breadcrumbs": "Pesquisar por Data",
 
   // "browse.metadata.subject.breadcrumbs": "Browse by Subject",
-  "browse.metadata.subject.breadcrumbs": "Pesquisar por Assunto (pt)",
+  "browse.metadata.subject.breadcrumbs": "Pesquisar por Assunto",
 
   // "browse.metadata.srsc.breadcrumbs": "Browse by Subject Category", (Auto-Translated)
   "browse.metadata.srsc.breadcrumbs": "Navegue por categoria de assunto",
@@ -4240,7 +4240,7 @@
   "menu.section.browse_global_by_dateissued": "Por Data de Publicação",
 
   // "menu.section.browse_global_by_subject": "By Subject",
-  "menu.section.browse_global_by_subject": "Por Assunto (pt)",
+  "menu.section.browse_global_by_subject": "Por Assunto",
 
   // "menu.section.browse_global_by_srsc": "By Subject Category", (Auto-Translated)
   "menu.section.browse_global_by_srsc": "Por categoria de assunto",
@@ -5474,7 +5474,7 @@
   "search.filters.applied.f.namedresourcetype": "Estado",
 
   // "search.filters.applied.f.subject": "Subject",
-  "search.filters.applied.f.subject": "Assunto (pt)",
+  "search.filters.applied.f.subject": "Assunto",
 
   // "search.filters.applied.f.submitter": "Submitter",
   "search.filters.applied.f.submitter": "Submetedor",
@@ -5684,13 +5684,13 @@
   "search.filters.filter.show-more": "Mostrar mais",
 
   // "search.filters.filter.subject.head": "Subject",
-  "search.filters.filter.subject.head": "Assunto (pt)",
+  "search.filters.filter.subject.head": "Assunto",
 
   // "search.filters.filter.subject.placeholder": "Subject",
-  "search.filters.filter.subject.placeholder": "Assunto (pt)",
+  "search.filters.filter.subject.placeholder": "Assunto",
 
   // "search.filters.filter.subject.label": "Search subject",
-  "search.filters.filter.subject.label": "Procurar assunto (pt)",
+  "search.filters.filter.subject.label": "Procurar assunto",
 
   // "search.filters.filter.submitter.head": "Submitter",
   "search.filters.filter.submitter.head": "Submetedor",
@@ -7863,30 +7863,6 @@
   "menu.footer.image.govfed":"Governo Federal",
   "menu.footer.image.mme":"Ministério de Minas e Energia",
   
-  "search.filters.applied.f.subjecten": "Assunto (en)",
-  "search.filters.filter.subjecten.head": "Assunto (en)",
-  "search.filters.filter.subjecten.placeholder": "Assunto (en)",
-  "search.filters.filter.subjecten.label": "Procurar assunto (en)",
-  "menu.section.browse_global_by_subjecten": "Por Assunto (en)",
-  "browse.metadata.subjecten.breadcrumbs": "Pesquisar por Assunto (en)",
-  "browse.metadata.subjecten":"Assunto (en)",
-
-  "search.filters.applied.f.subjectes": "Assunto (es)",
-  "search.filters.filter.subjectes.head": "Assunto (es)",
-  "search.filters.filter.subjectes.placeholder": "Assunto (es)",
-  "search.filters.filter.subjectes.label": "Procurar assunto (es)",
-  "menu.section.browse_global_by_subjectes": "Por Assunto (es)",
-  "browse.metadata.subjectes.breadcrumbs": "Pesquisar por Assunto (es)",
-  "browse.metadata.subjectes":"Assunto (es)",
-
-  "search.filters.applied.f.subjectfr": "Assunto (fr)",
-  "search.filters.filter.subjectfr.head": "Assunto (fr)",
-  "search.filters.filter.subjectfr.placeholder": "Assunto (fr)",
-  "search.filters.filter.subjectfr.label": "Procurar assunto (fr)",
-  "menu.section.browse_global_by_subjectfr": "Por Assunto (fr)",
-  "browse.metadata.subjectfr.breadcrumbs": "Pesquisar por Assunto (fr)",
-  "browse.metadata.subjectfr":"Assunto (fr)",
-
   "search.filters.applied.f.type": "Tipo",
   "search.filters.filter.type.head": "Tipo",
   "search.filters.filter.type.placeholder": "Tipo",
@@ -7894,6 +7870,8 @@
   "menu.section.browse_global_by_type": "Por Tipo",
   "browse.metadata.type.breadcrumbs": "Pesquisar por Tipo",
   "browse.metadata.type":"Tipo",
+  "browse.comcol.by.type":"Por Tipo",
+  "item.page.type":"Tipo",
 
   "search.filters.applied.f.local": "Local",
   "search.filters.filter.local.head": "Local",
@@ -7902,6 +7880,8 @@
   "menu.section.browse_global_by_local": "Por Local",
   "browse.metadata.local.breadcrumbs": "Pesquisar por Local",
   "browse.metadata.local":"Local",
+  "browse.comcol.by.local":"Por Local",
+  "item.page.local":"Local",
 
   "search.filters.applied.f.defense": "Data de defesa",
   "search.filters.filter.defense.head": "Data de defesa",
@@ -7910,6 +7890,7 @@
   "menu.section.browse_global_by_defense": "Por Data de defesa",
   "browse.metadata.defense.breadcrumbs": "Pesquisar por Data de defesa",
   "browse.metadata.defense":"Data de defesa",
+  "browse.comcol.by.defense":"Por Data de defesa",
 
   "search.filters.applied.f.rights": "Tipo de acesso",
   "search.filters.filter.rights.head": "Tipo de acesso",
@@ -7918,4 +7899,8 @@
   "menu.section.browse_global_by_rights": "Por Tipo de acesso",
   "browse.metadata.rights.breadcrumbs": "Pesquisar por Tipo de acesso",
   "browse.metadata.rights":"Tipo de acesso",
+  "browse.comcol.by.rights":"Por Tipo de acesso",
+  "item.page.rights":"Tipo de acesso",
+
+
 }
