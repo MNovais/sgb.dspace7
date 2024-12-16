@@ -30,18 +30,6 @@
         position: absolute;
       }
 
-      &:before {
-        background: linear-gradient(to left, var(--ds-banner-text-background), transparent);
-        left: calc(-1 * var(--ds-banner-background-gradient-width));
-
-      }
-
-      &:after {
-        background: linear-gradient(to right, var(--ds-banner-text-background), transparent);
-        right: calc(-1 * var(--ds-banner-background-gradient-width));
-      }
-
-      background-color: var(--ds-banner-text-background);
     }
 
 
@@ -59,6 +47,10 @@
 
   .jumbotron {
     background-color: transparent;
+  }
+
+  .banner_rigeo{
+    max-width: 100%;
   }
 
   a {

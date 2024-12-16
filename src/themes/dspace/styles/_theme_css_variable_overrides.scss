@@ -5,10 +5,12 @@
   @include media-breakpoint-up(md) {
     --ds-header-logo-height: 40px;
     --ds-header-height: 80px;
+    --ds-footer-logo-height:80px;
   }
   @include media-breakpoint-down(sm) {
     --ds-header-logo-height: 50px;
     --ds-header-height: 90px;
+    --ds-footer-logo-height:100px;
   }
 
   --ds-banner-text-background: rgba(0, 0, 0, 0.45);
@@ -21,4 +23,17 @@
   --ds-expandable-navbar-border-top-color: #{$white};
   --ds-expandable-navbar-border-top-height: 0;
   --ds-expandable-navbar-padding-top: 0;
+
+  .jumbotron {
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.3rem;
+    margin-bottom: 0.3rem;
+  }
+
+  @media (min-width: 576px) {
+    .jumbotron {
+      padding: 1rem 0.5rem;
+      margin-bottom: 0.2rem;
+    }
+  }
 }

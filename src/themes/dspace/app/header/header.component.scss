@@ -1,4 +1,8 @@
 :host {
+  .main-site-header{
+    background-color: lightskyblue;
+  }
+
   #main-site-header {
     min-height: var(--ds-header-height);
 
@@ -25,4 +29,11 @@
     }
   }
 
+  .header-right > a {
+    color: aliceblue !important;
+  }
+
+  .header-left > a {
+    color: aliceblue !important;
+  }
 }
