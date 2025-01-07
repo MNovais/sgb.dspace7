@@ -1,8 +1,10 @@
 <div class="toplevelcomm">
   <a *ngIf="linkType != linkTypes.None" [target]="(linkType == linkTypes.ExternalLink) ? '_blank' : '_self'" [attr.rel]="(linkType == linkTypes.ExternalLink) ? 'noopener noreferrer' : null" [routerLink]="['/communities/' + object.id]" class="lead">
-    <!-- {{ dsoNameService.getName(object) }} -->
-    <img *ngIf="dsoNameService.getName(object) == 'PRODUÇÃO CIENTÍFICA'" src="assets/dspace/images/producao_cientifica.png" [attr.alt]="'menu.community.producao_cientifica' | translate" />
-    <img *ngIf="dsoNameService.getName(object) == 'PRODUÇÃO INSTITUCIONAL'" src="assets/dspace/images/producao_institucional.png" [attr.alt]="'menu.community.producao_institucional' | translate" />
+     
+    <img class="imagem" *ngIf="dsoNameService.getName(object) == 'PRODUÇÃO CIENTÍFICA'" src="assets/dspace/images/producao_cientifica.png" [attr.alt]="'menu.community.producao_cientifica' | translate" />
+    <img class="imagem" *ngIf="dsoNameService.getName(object) == 'PRODUÇÃO INSTITUCIONAL'" src="assets/dspace/images/producao_institucional.png" [attr.alt]="'menu.community.producao_institucional' | translate" />
+    <br />
+    <span class="nomecom">{{ dsoNameService.getName(object) }}</span>
   </a>
   <span *ngIf="linkType == linkTypes.None" class="lead">
     {{ dsoNameService.getName(object) }}

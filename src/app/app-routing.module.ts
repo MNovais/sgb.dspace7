@@ -227,6 +227,11 @@ import { ThemedPageErrorComponent } from './page-error/themed-page-error.compone
               .then((m) => m.HealthPageModule)
           },
           {
+            path: 'sobre',
+            loadChildren: () => import('./sobre/sobre.module')
+              .then((m) => m.SobreModule)
+          },
+          {
             path: ACCESS_CONTROL_MODULE_PATH,
             loadChildren: () => import('./access-control/access-control.module').then((m) => m.AccessControlModule),
             canActivate: [GroupAdministratorGuard, EndUserAgreementCurrentUserGuard],

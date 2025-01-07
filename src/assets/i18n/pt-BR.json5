@@ -7902,5 +7902,11 @@
   "browse.comcol.by.rights":"Por Tipo de acesso",
   "item.page.rights":"Tipo de acesso",
 
-
+  "sobre.info1":"O Repositório Institucional de Geociências - RIGeo objetiva promover o acesso aberto ao conhecimento geocientífico gerado no âmbito do Serviço Geológico do Brasil - SGB.",
+  "sobre.info2":"O RIGeo visa garantir à sociedade o acesso gratuito, público e aberto ao conhecimento geocientífico e demais áreas correlacionadas abrangidas na missão da empresa.",
+  "sobre":"Sobre",
+  "sobre.titulo":"Sobre o Rigeo",
+  "sobre.contato":"Contato",
+  "menu.section.sobre":"Sobre",
+  "sobre.breadcrumbs":"Sobre",
 }
