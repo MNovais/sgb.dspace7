@@ -62,6 +62,7 @@ services:
     - ./backend/submission-forms.xml:/dspace/config/submission-forms.xml:ro
     - ./backend/item-submission.xml:/dspace/config/item-submission.xml:ro
     - ./backend/controlled-vocabularies/geodesc.xml:/dspace/config/controlled-vocabularies/geodesc.xml:ro
+    - ./backend/spring/api/discovery.xml:/dspace/config/spring/api/discovery.xml:ro
     entrypoint:
     - /bin/bash
     - '-c'
