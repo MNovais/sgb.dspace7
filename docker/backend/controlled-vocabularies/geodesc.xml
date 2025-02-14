@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node id="GEODESC" label="GEODESC">
+	<isComposedBy>
+		<node id="01" label="Agronomia">
+			<isComposedBy>
+				<node id="0101" label="Usos do solo" />
+				<node id="0102" label="Irrigação" />
+			</isComposedBy>
+		</node>
+		<node id="02" label="Alteração">
+		<isComposedBy>
+				<node id="0201" label="Bauxitização" />
+				<node id="0202" label="Caulinização" />
+				<node id="0203" label="Intemperismo" />
+				<node id="0204" label="Laterita" />
+				<node id="0205" label="Laterização" />
+				<node id="0206" label="Processos hidrotermais" />
+				<node id="0207" label="Serpentinização" />
+			</isComposedBy>
+		</node>
+		<node id="03" label="Antropologia">
+			<isComposedBy>
+				<node id="0301" label="Sambaquis">
+					<isComposedBy>
+						<node id="030101" label="Sambaquis subnivel" />
+					</isComposedBy>
+				</node>
+				<node id="0302" label="Ágata" />
+			</isComposedBy>
+		</node>
+		<node id="04" label="Beneficiamento" />
+		<node id="05" label="Biologia" />
+		<node id="06" label="Cartografia">
+			<isComposedBy>
+				<node id="0601" label="Cartas" />
+				<node id="0602" label="Cartografia digital" />
+				<node id="0603" label="Mapa ambiental" />
+				<node id="0604" label="Mapa geotécnico" />
+				<node id="0605" label="Mapa índice" />
+				<node id="0606" label="Mapa previsional" />
+				<node id="0607" label="Mapas" />
+			</isComposedBy>
+		</node>
+	</isComposedBy>
+</node>

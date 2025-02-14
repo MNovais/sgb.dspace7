@@ -1,0 +1,42 @@
+:host {
+  footer {
+    background-color: white;
+    text-align: center;
+    z-index: var(--ds-footer-z-index);
+    border-top: var(--ds-footer-border);
+    padding: var(--ds-footer-padding);
+    width: 100%;
+
+    p {
+      margin: 0;
+    }
+
+    .footer_div {
+      float:left;
+      width:30%;
+    }
+   
+    .p-1{
+      padding: 0em !important;
+    }
+
+    .top-footer {
+      background-color: var(--ds-top-footer-bg);
+      padding: var(--ds-footer-padding);
+      margin: calc(var(--ds-footer-padding) * -1);
+    }
+
+    .bottom-footer {
+      background-color: var(--ds-top-footer-bg);
+      max-height: var(--ds-footer-logo-height);
+      width: 100%;
+    }
+    
+    .social-icon > img{
+      padding: 8px;
+      max-width: 35%;
+    }
+  }
+}
+
+

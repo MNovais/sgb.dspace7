@@ -48,6 +48,18 @@
       [fields]="['dc.publisher']"
       [label]="'item.page.publisher'">
     </ds-generic-item-page-field>
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['dc.type']"
+      [label]="'item.page.type'">
+    </ds-generic-item-page-field>
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['dc.rights']"
+      [label]="'item.page.rights'">
+    </ds-generic-item-page-field>
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['dc.degree.local']"
+      [label]="'item.page.local'">
+    </ds-generic-item-page-field>
   </div>
   <div class="col-xs-12 col-md-6">
     <ds-item-page-abstract-field [item]="object"></ds-item-page-abstract-field>
@@ -57,7 +69,7 @@
     </ds-generic-item-page-field>
 
     <ds-generic-item-page-field [item]="object"
-      [fields]="['dc.subject']"
+      [fields]="['dc.subject.*']"
       [separator]="', '"
       [label]="'item.page.subject'">
     </ds-generic-item-page-field>

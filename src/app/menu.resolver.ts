@@ -137,6 +137,20 @@ export class MenuResolver implements Resolve<boolean> {
               } as TextMenuItemModel,
             }
           );
+          menuList.push(
+            /* Sobre */
+            {
+              id: 'sobre',
+              active: false,
+              visible: true,
+              index: 2,
+              model: {
+                type: MenuItemType.LINK,
+                text: 'menu.section.sobre',
+                link:'/sobre'
+              } as LinkMenuItemModel,
+            }
+          );
         }
         menuList.forEach((menuSection) => this.menuService.addSection(MenuID.PUBLIC, Object.assign(menuSection, {
           shouldPersistOnRouteChange: true

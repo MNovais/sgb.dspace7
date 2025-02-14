@@ -2758,13 +2758,13 @@
   "home.breadcrumbs": "Início",
 
   // "home.search-form.placeholder": "Search the repository ...",
-  "home.search-form.placeholder": "Pesquise no repositório...",
+  "home.search-form.placeholder": "Busque no repositório...",
 
   // "home.title": "Home",
   "home.title": "Início",
 
   // "home.top-level-communities.head": "Communities in DSpace",
-  "home.top-level-communities.head": "Comunidades no DSpace",
+  "home.top-level-communities.head": "Comunidades do RIGeo",
 
   // "home.top-level-communities.help": "Select a community to browse its collections.",
   "home.top-level-communities.help": "Selecione uma comunidade para navegar por suas coleções",
@@ -4231,7 +4231,7 @@
   "menu.section.browse_community_by_title": "Por Título",
 
   // "menu.section.browse_global": "All of DSpace",
-  "menu.section.browse_global": "Tudo no DSpace",
+  "menu.section.browse_global": "Navegar",
 
   // "menu.section.browse_global_by_author": "By Author",
   "menu.section.browse_global_by_author": "Por Autor",
@@ -4564,7 +4564,7 @@
   "mydspace.view-btn": "Ver",
 
   // "nav.browse.header": "All of DSpace",
-  "nav.browse.header": "Tudo no DSpace",
+  "nav.browse.header": "Navegar",
 
   // "nav.community-browse.header": "By Community",
   "nav.community-browse.header": "Por Comunidade",
@@ -7857,4 +7857,56 @@
 
   //"browse.search-form.placeholder": "Search the repository",
   "browse.search-form.placeholder": "Buscar no repositório",
+
+  //Chaves SGB
+  "menu.footer.image.sgb":"Serviço Geológico do Brasil",
+  "menu.footer.image.govfed":"Governo Federal",
+  "menu.footer.image.mme":"Ministério de Minas e Energia",
+  
+  "search.filters.applied.f.type": "Tipo",
+  "search.filters.filter.type.head": "Tipo",
+  "search.filters.filter.type.placeholder": "Tipo",
+  "search.filters.filter.type.label": "Procurar tipo",
+  "menu.section.browse_global_by_type": "Por Tipo",
+  "browse.metadata.type.breadcrumbs": "Pesquisar por Tipo",
+  "browse.metadata.type":"Tipo",
+  "browse.comcol.by.type":"Por Tipo",
+  "item.page.type":"Tipo",
+
+  "search.filters.applied.f.local": "Local",
+  "search.filters.filter.local.head": "Local",
+  "search.filters.filter.local.placeholder": "Local",
+  "search.filters.filter.local.label": "Procurar local",
+  "menu.section.browse_global_by_local": "Por Local",
+  "browse.metadata.local.breadcrumbs": "Pesquisar por Local",
+  "browse.metadata.local":"Local",
+  "browse.comcol.by.local":"Por Local",
+  "item.page.local":"Local",
+
+  "search.filters.applied.f.defense": "Data de defesa",
+  "search.filters.filter.defense.head": "Data de defesa",
+  "search.filters.filter.defense.placeholder": "Data de defesa",
+  "search.filters.filter.defense.label": "Procurar data de defesa",
+  "menu.section.browse_global_by_defense": "Por Data de defesa",
+  "browse.metadata.defense.breadcrumbs": "Pesquisar por Data de defesa",
+  "browse.metadata.defense":"Data de defesa",
+  "browse.comcol.by.defense":"Por Data de defesa",
+
+  "search.filters.applied.f.rights": "Tipo de acesso",
+  "search.filters.filter.rights.head": "Tipo de acesso",
+  "search.filters.filter.rights.placeholder": "Tipo de acesso",
+  "search.filters.filter.rights.label": "Procurar tipo de acesso",
+  "menu.section.browse_global_by_rights": "Por Tipo de acesso",
+  "browse.metadata.rights.breadcrumbs": "Pesquisar por Tipo de acesso",
+  "browse.metadata.rights":"Tipo de acesso",
+  "browse.comcol.by.rights":"Por Tipo de acesso",
+  "item.page.rights":"Tipo de acesso",
+
+  "sobre.info1":"O Repositório Institucional de Geociências - RIGeo objetiva promover o acesso aberto ao conhecimento geocientífico gerado no âmbito do Serviço Geológico do Brasil - SGB.",
+  "sobre.info2":"O RIGeo visa garantir à sociedade o acesso gratuito, público e aberto ao conhecimento geocientífico e demais áreas correlacionadas abrangidas na missão da empresa.",
+  "sobre":"Sobre",
+  "sobre.titulo":"Sobre o Rigeo",
+  "sobre.contato":"Para solicitações, dúvidas e sugestões, envie-nos uma mensagem pelo menu 'Contato' ou pelo email abaixo:",
+  "menu.section.sobre":"Sobre",
+  "sobre.breadcrumbs":"Sobre",
 }

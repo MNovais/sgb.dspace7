@@ -59,12 +59,15 @@ services:
 
     # local.cfg
     - ./backend/local.cfg:/dspace/config/local.cfg:ro
+    - ./backend/submission-forms.xml:/dspace/config/submission-forms.xml:ro
+    - ./backend/item-submission.xml:/dspace/config/item-submission.xml:ro
+    - ./backend/controlled-vocabularies/geodesc.xml:/dspace/config/controlled-vocabularies/geodesc.xml:ro
     entrypoint:
     - /bin/bash
     - '-c'
     - |
       while (!</dev/tcp/dspacedb/5432) > /dev/null 2>&1; do sleep 1; done;
-      /dspace/bin/dspace database migrate
+      /dspace/bin/dspace database migrate ignored
       catalina.sh run
   # DSpace database container    
   dspacedb:

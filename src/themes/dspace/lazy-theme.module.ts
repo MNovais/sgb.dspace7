@@ -62,6 +62,7 @@ import { ItemVersionsModule } from '../../app/item-page/versions/item-versions.m
 import { ItemSharedModule } from 'src/app/item-page/item-shared.module';
 
 const DECLARATIONS = [
+  
 ];
 
 @NgModule({
