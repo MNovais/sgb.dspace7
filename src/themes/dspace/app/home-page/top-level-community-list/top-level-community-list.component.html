@@ -1,9 +1,9 @@
 <ng-container *ngVar="(communitiesRD$ | async) as communitiesRD">
     <div *ngIf="communitiesRD?.hasSucceeded ">
-      <h2>
+      <h2 class="titulocentral">
         {{'home.top-level-communities.head' | translate}}
       </h2>
-    <p class="lead">{{'home.top-level-communities.help' | translate}}</p>
+    <!-- <p class="lead">{{'home.top-level-communities.help' | translate}}</p> -->
     <ds-viewable-collection
       [config]="config"
       [sortConfig]="sortConfig"
