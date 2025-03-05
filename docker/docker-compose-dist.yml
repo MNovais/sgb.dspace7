@@ -15,7 +15,7 @@ services:
     container_name: dspace-angular
     environment:
       DSPACE_UI_SSL: 'false'
-      DSPACE_UI_HOST: dspace-angular
+      DSPACE_UI_HOST: localhost
       DSPACE_UI_PORT: '4000'
       DSPACE_UI_NAMESPACE: /
       # NOTE: When running the UI in production mode (which the -dist image does),
@@ -26,10 +26,11 @@ services:
       DSPACE_REST_HOST: ${DSPACE_REST_HOST}
       DSPACE_REST_PORT: ${DSPACE_REST_PORT}
       DSPACE_REST_NAMESPACE: /server
-    image: ${DOCKER_OWNER:-dspace}/dspace-angular:${DSPACE_VER:-dspace-7_x}-dist
+    #image: ${DOCKER_OWNER:-dspace}/dspace-angular:${DSPACE_VER:-dspace-7_x}
+    image: rigeo:latest
     build:
       context: ..
-      dockerfile: Dockerfile.dist
+      dockerfile: Dockerfile
     networks:
       dspacenet:
     ports:
@@ -37,3 +38,6 @@ services:
       target: 4000
     stdin_open: true
     tty: true
+    volumes:
+      - ../config/config.prod.yml:/app/config/config.prod.yml:ro
+      - ../config/config.dev.yml:/app/config/config.dev.yml:ro
