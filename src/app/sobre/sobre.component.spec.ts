@@ -1,31 +1,36 @@
 import { NO_ERRORS_SCHEMA } from '@angular/core';
-import { waitForAsync, ComponentFixture, TestBed } from '@angular/core/testing';
+import {
+  ComponentFixture,
+  TestBed,
+  waitForAsync,
+} from '@angular/core/testing';
+import { ActivatedRoute } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 
+import { ActivatedRouteStub } from '../shared/testing/active-router.stub';
 import { SobreComponent } from './sobre.component';
 
 describe('SobreComponent', () => {
-  let comp: SobreComponent;
+  let component: SobreComponent;
   let fixture: ComponentFixture<SobreComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      imports: [
-        TranslateModule.forRoot()
+      imports: [TranslateModule.forRoot(), SobreComponent],
+      providers: [
+        { provide: ActivatedRoute, useValue: new ActivatedRouteStub() },
       ],
-      declarations: [SobreComponent],
-      schemas: [NO_ERRORS_SCHEMA]
+      schemas: [NO_ERRORS_SCHEMA],
     }).compileComponents();
   }));
 
   beforeEach(() => {
     fixture = TestBed.createComponent(SobreComponent);
-    comp = fixture.componentInstance; // SearchPageComponent test instance
+    component = fixture.componentInstance;
     fixture.detectChanges();
   });
 
-  it('should create instance', () => {
-    expect(comp).toBeDefined();
+  it('should create', () => {
+    expect(component).toBeTruthy();
   });
-
 });

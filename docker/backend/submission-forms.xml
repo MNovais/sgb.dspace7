@@ -132,6 +132,7 @@
                     <hint>Digite a data de publicação do item. Pode-se deixar o dia e/ou mês em branco, caso não se aplique.</hint>
                     <required>O preenchimento do ano de publicação é obrigatório.</required>
                 </field>
+
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>publisher</dc-element>
@@ -319,7 +320,7 @@
                     <input-type value-pairs-name="common_rights">dropdown</input-type>
                     <hint>Escolha se os direitos deste item são de acesso aberto ou restrito.</hint>
                     <required/>
-                    <type-bind>Presentation,Article,Atlas,Book chapter,Primer,Dissertation,Photo indexes,Book,Map,Preprint,Thesis,Working Paper,Completion course work,Other</type-bind>
+                    <type-bind>Presentation,Article,Atlas,Book chapter,Primer,Dissertation,Photo indexes,multimidia,Book,Map,Preprint,Thesis,Working Paper,Completion course work,Other</type-bind>
                 </field>
             </row>
             <row>
@@ -621,7 +622,7 @@
                     <hint>Select the type(s) of content of the item. To select more than one value in the list, you may
                         have to hold down the "CTRL" or "Shift" key.
                     </hint>
-                    <required></required>
+                    <required>You must choose at least one type.</required>
                 </field>
             </row>
             <row>
@@ -786,18 +787,18 @@
             </row>
             <row>
                 <relation-field>
-                    <relationship-type>isProjectOfOrgUnit</relationship-type>
+                    <relationship-type>isOrgUnitOfProject</relationship-type>
                     <search-configuration>orgunit</search-configuration>
                     <repeatable>false</repeatable>
                     <label>Organization</label>
                     <hint>Enter the organization's name</hint>
                     <linked-metadata-field>
-                        <dc-schema>project</dc-schema>
-                        <dc-element>funder</dc-element>
-                        <dc-qualifier>name</dc-qualifier>
+                        <dc-schema>dc</dc-schema>
+                        <dc-element>contributor</dc-element>
+                        <dc-qualifier>other</dc-qualifier>
                         <input-type>onebox</input-type>
                     </linked-metadata-field>
-                    <externalsources/>
+                    <externalsources>ror</externalsources>
                 </relation-field>
             </row>
             <row>
@@ -1074,9 +1075,9 @@
 
         </form>
 
-        <!-- OpenAIRE specific forms -->
+        <!-- Openaire specific forms -->
 
-        <form name="openAIREPublicationPageoneForm">
+        <form name="openairePublicationPageoneForm">
             <row>
                 <field>
                     <dc-schema>dc</dc-schema>
@@ -1296,7 +1297,7 @@
                     <hint>Select the type(s) of content of the item. To select more than one value in the list, you may
                         have to hold down the "CTRL" or "Shift" key.
                     </hint>
-                    <required></required>
+                    <required>You must choose at least one type.</required>
                 </field>
             </row>
             <row>
@@ -1326,7 +1327,7 @@
             </row>
         </form>
 
-        <form name="openAIREPublicationPagetwoForm">
+        <form name="openairePublicationPagetwoForm">
             <row>
                 <field>
                     <dc-schema>dc</dc-schema>
@@ -1384,7 +1385,7 @@
                         <dc-element>relation</dc-element>
                         <input-type>onebox</input-type>
                     </linked-metadata-field>
-                    <externalsources>openAIREFunding</externalsources>
+                    <externalsources>openaireFunding</externalsources>
                     <required></required>
                 </relation-field>
             </row>
@@ -1437,7 +1438,7 @@
             </row>
         </form>
 
-        <form name="openAIREPersonForm">
+        <form name="openairePersonForm">
             <row>
                 <field>
                     <dc-schema>person</dc-schema>
@@ -1501,7 +1502,7 @@
             </row>
         </form>
 
-        <form name="openAIREProjectForm">
+        <form name="openaireProjectForm">
             <row>
                 <field>
                     <dc-schema>dc</dc-schema>
@@ -1524,7 +1525,7 @@
             <row>
                 <relation-field>
                     <relationship-type>isFundingAgencyOfProject</relationship-type>
-                    <search-configuration>openAIREFundingAgency</search-configuration>
+                    <search-configuration>openaireFundingAgency</search-configuration>
                     <repeatable>false</repeatable>
                     <name-variants>false</name-variants>
                     <label>Funding Agency</label>
@@ -1557,7 +1558,7 @@
             </row>
         </form>
 
-        <form name="openAIREOrganizationForm">
+        <form name="openaireOrganizationForm">
             <row>
                 <field>
                     <dc-schema>organization</dc-schema>
@@ -1626,20 +1627,24 @@
                 <stored-value>issn</stored-value>
             </pair>
             <pair>
-                <displayed-value>DOI</displayed-value>
-                <stored-value>doi</stored-value>
+                <displayed-value>Other</displayed-value>
+                <stored-value>other</stored-value>
             </pair>
             <pair>
-                <displayed-value>ISBN</displayed-value>
-                <stored-value>isbn</stored-value>
+                <displayed-value>ISMN</displayed-value>
+                <stored-value>ismn</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Gov't Doc #</displayed-value>
+                <stored-value>govdoc</stored-value>
             </pair>
             <pair>
                 <displayed-value>URI</displayed-value>
                 <stored-value>uri</stored-value>
             </pair>
             <pair>
-                <displayed-value>Other</displayed-value>
-                <stored-value>other</stored-value>
+                <displayed-value>ISBN</displayed-value>
+                <stored-value>isbn</stored-value>
             </pair>
         </value-pairs>
 
@@ -1732,7 +1737,7 @@
                 <displayed-value>Outro</displayed-value>
                 <stored-value>Other</stored-value>
             </pair>
-      </value-pairs>
+        </value-pairs>
 
         <!-- default language order: (from dspace 1.2.1)
              "en_US", "en", "es", "de", "fr", "it", "ja", "zh", "other", ""
@@ -1740,43 +1745,39 @@
         <value-pairs value-pairs-name="common_iso_languages" dc-term="language_iso">
             <pair>
                 <displayed-value>N/A</displayed-value>
-                <stored-value/>
+                <stored-value></stored-value>
             </pair>
             <pair>
                 <displayed-value>Português</displayed-value>
-                <stored-value>pt_BR</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Inglês (Estados Unidos)</displayed-value>
-                <stored-value>en_US</stored-value>
+                <stored-value>por</stored-value>
             </pair>
             <pair>
                 <displayed-value>Inglês</displayed-value>
-                <stored-value>en</stored-value>
+                <stored-value>eng</stored-value>
             </pair>
             <pair>
                 <displayed-value>Espanhol</displayed-value>
-                <stored-value>es</stored-value>
+                <stored-value>spa</stored-value>
             </pair>
             <pair>
                 <displayed-value>Alemão</displayed-value>
-                <stored-value>de</stored-value>
+                <stored-value>deu</stored-value>
             </pair>
             <pair>
                 <displayed-value>Francês</displayed-value>
-                <stored-value>fr</stored-value>
+                <stored-value>fra</stored-value>
             </pair>
             <pair>
                 <displayed-value>Italiano</displayed-value>
-                <stored-value>it</stored-value>
+                <stored-value>ita</stored-value>
             </pair>
             <pair>
                 <displayed-value>Japonês</displayed-value>
-                <stored-value>ja</stored-value>
+                <stored-value>jpn</stored-value>
             </pair>
             <pair>
                 <displayed-value>Chinês</displayed-value>
-                <stored-value>zh</stored-value>
+                <stored-value>czh</stored-value>
             </pair>
             <pair>
                 <displayed-value>(Outro)</displayed-value>
@@ -1806,7 +1807,7 @@
             </pair>
         </value-pairs>
 
-        <!-- OpenAIRE specific value pairs -->
+        <!-- Openaire specific value pairs -->
 
         <value-pairs value-pairs-name="openaire_license_types" dc-term="license">
 
@@ -1848,7 +1849,7 @@
 
         </value-pairs>
 
-        <!-- OpenAIRE document types
+        <!-- Openaire document types
              https://openaire-guidelines-for-literature-repository-managers.readthedocs.io/en/v4.0.0/field_publicationtype.html
              Based on COAR Vocabularies -> Controlled Vocabulary for Resource Type Genres (Version 2.0):
              http://vocabularies.coar-repositories.org/documentation/resource_types/

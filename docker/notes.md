@@ -17,7 +17,7 @@ docker compose -f docker-compose-dist.yaml -f docker-compose-rest.yaml up -d
 # namespace do registry
 DOCKER_OWNER=dspace
 # Nome da tag
-DSPACE_VER=7.6.2
+DSPACE_VER=8.1
 # Parâmetros do dspace frontend
 DSPACE_REST_SSL=false
 DSPACE_REST_HOST=localhost

@@ -20,9 +20,13 @@
 
   /* set the next two properties as `--ds-header-navbar-border-bottom-*`
   in order to keep the bottom border of the header when navbar is expanded */
+
   --ds-expandable-navbar-border-top-color: #{$white};
   --ds-expandable-navbar-border-top-height: 0;
   --ds-expandable-navbar-padding-top: 0;
+
+  --ds-item-page-img-field-default-inline-height: 24px;
+  --ds-item-page-img-field-ror-inline-height: var(--ds-item-page-img-field-default-inline-height);
 
   .jumbotron {
     padding: 0.5rem 0.5rem;

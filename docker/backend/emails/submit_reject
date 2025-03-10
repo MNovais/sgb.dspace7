@@ -1,0 +1,22 @@
+## Rejection email message
+##
+## {0}  Title of submission
+## {1}  Name of collection
+## {2}  Name of the rejector
+## {3}  Reason for the rejection
+## {4}  Link to 'My DSpace' page
+##
+#set($subject = "${config.get('dspace.name')}: Envio rejeitado")
+
+Você enviou: ${params[0]}
+
+Para a coleção: ${params[1]}
+
+Seu envio foi rejeitado por ${params[2]}
+com a seguinte explicação:
+
+${params[3]}
+
+Seu envio não foi excluído. Você pode acessá-lo na sua página "My${config.get('dspace.shortname')}": ${params[4]}
+
+Equipe RIGEO

@@ -1,0 +1,16 @@
+## Email sent to DSpace users when they successfully export an item or collection.
+##
+## Parameters: {0} the export error
+##             {1} the URL to the feedback page
+##
+##
+## See org.dspace.core.Email for information on the format of this file.
+##
+#set($subject = "${config.get('dspace.name')}: A exportação do item que você solicitou não foi concluída.")
+A exportação do item que você solicitou não foi concluída devido ao seguinte motivo:
+ ${params[0]}
+
+Para mais informações, entre em contato com o administrador do sistema:
+ ${params[1]}
+
+Equipe RIGEO

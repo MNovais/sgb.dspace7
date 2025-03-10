@@ -1,0 +1,18 @@
+## E-mail sent to designated address about updates on subscribed items
+##
+## Parameters: {0} Communities updates
+##             {1} Collections updates
+#set($subject = "${config.get('dspace.name')} Assinaturas")
+Este e-mail é enviado de ${config.get('dspace.name')} com base nas preferências de assinatura escolhidas.
+
+#if( not( "$params[0]" == "" ))
+Assinaturas da comunidade:
+------------------------
+Lista de itens alterados: ${params[0]}
+
+#end
+#if( not( "$params[1]" == "" ))
+Assinaturas da coleção:
+-------------------------
+Lista de itens alterados: ${params[1]}
+#end

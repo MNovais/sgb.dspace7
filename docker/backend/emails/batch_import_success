@@ -1,0 +1,14 @@
+
+## Email sent to DSpace users when they successfully batch import items.
+##
+## Parameters: {0} the filepath to the mapfile created by the batch import
+##
+##
+## See org.dspace.core.Email for information on the format of this file.
+##
+#set($subject = 'RIGEO - Importação em lote concluída com sucesso')
+A importação de itens em lote que você iniciou na UI do DSpace foi concluída com sucesso.
+
+Você pode encontrar o mapfile para a importação no seguinte caminho: ${params[0]}
+
+Equipe RIGEO
