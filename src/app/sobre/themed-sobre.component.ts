@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+
 import { ThemedComponent } from '../shared/theme-support/themed.component';
 import { SobreComponent } from './sobre.component';
 
@@ -6,9 +7,11 @@ import { SobreComponent } from './sobre.component';
  * Themed wrapper for SobreComponent
  */
 @Component({
-  selector: 'ds-themed-sobre',
+  selector: 'ds-sobre',
   styleUrls: [],
-  templateUrl: './../shared/theme-support/themed.component.html'
+  templateUrl: '../shared/theme-support/themed.component.html',
+  standalone: true,
+  imports: [SobreComponent],
 })
 export class ThemedSobreComponent extends ThemedComponent<SobreComponent> {
   protected getComponentName(): string {
@@ -22,4 +25,5 @@ export class ThemedSobreComponent extends ThemedComponent<SobreComponent> {
   protected importUnthemedComponent(): Promise<any> {
     return import(`./sobre.component`);
   }
+
 }

@@ -1,0 +1,14 @@
+## E-mail sent to a DSpace user after a new account is registered.
+##
+## See org.dspace.core.Email for information on the format of this file.
+##
+#set($subject = "Bem-vindo, novo usuário registrado ${config.get('dspace.name')}!")
+Obrigado por registrar uma conta. Sua nova conta pode ser usada imediatamente
+para assinar avisos de novos conteúdos chegando em coleções de sua escolha.
+
+Sua nova conta também pode receber privilégios para enviar novos conteúdos, ou para
+editar e/ou aprovar envios.
+
+Se precisar de assistência com sua conta, envie um e-mail para ${config.get("mail.helpdesk")}.
+
+Equipe RIGEO

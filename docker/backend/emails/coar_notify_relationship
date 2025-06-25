@@ -1,0 +1,29 @@
+## Notification email sent that a resource has been related by a service
+##
+## Parameters: {0} Service Name
+##             {1} Item Name
+##             {2} Service URL
+##             {3} Item URL
+##             {4} Submitter's Name
+##             {5} Date of the received LDN notification
+##             {6} LDN notification
+##             {7} Item
+##
+##
+#set($subject = "RIGEO: O Serviço ${params[0]} relacionou um recurso ""${params[6].object.subject}""")
+
+Uma notificação de anúncio de relacionamento foi recebida referente ao Item: ${params[1]}
+
+Aqui está um relatório mais detalhado:
+Item: ${params[1]}
+URL do Item: ${params[3]}
+Submetido por: ${params[4]}
+URL do recurso vinculado: ${params[6].object.subject}
+
+Tem um novo status: RELACIONADO
+
+Pelo Serviço: ${params[0]}
+URL do ServiÇO: ${params[2]}
+Data: ${params[5]}
+
+Equipe RIGEO

@@ -1,0 +1,27 @@
+## Notification email sent when an item has been endorsed by a service
+##
+## Parameters: {0} Service Name
+##             {1} Item Name
+##             {2} Service URL
+##             {3} Item URL
+##             {4} Submitter's Name
+##             {5} Date of the received LDN notification
+##
+##
+#set($subject = "RIGEO: O serviço ${params[0]} endossou o Item ""${params[1]}""")
+
+Uma notificação de anúncio de endosso foi recebida pelo serviço: ${params[0]}
+para o Item: ${params[1]}
+
+Aqui está um relatório mais detalhado:
+Item: ${params[1]}
+URL do Item: ${params[3]}
+Submetido por: ${params[4]}
+
+Tem um novo status: ENDOSSADO
+
+Pelo Serviço: ${params[0]}
+URL do Serviço: ${params[2]}
+Data: ${params[5]}
+
+Equipe RIGEO

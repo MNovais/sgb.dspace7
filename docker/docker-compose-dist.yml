@@ -15,21 +15,24 @@ services:
     container_name: dspace-angular
     environment:
       DSPACE_UI_SSL: 'false'
-      DSPACE_UI_HOST: dspace-angular
+      DSPACE_UI_HOST: 0.0.0.0
       DSPACE_UI_PORT: '4000'
       DSPACE_UI_NAMESPACE: /
       # NOTE: When running the UI in production mode (which the -dist image does),
       # these DSPACE_REST_* variables MUST point at a public, HTTPS URL.
       # This is because Server Side Rendering (SSR) currently requires a public URL,
       # see this bug: https://github.com/DSpace/dspace-angular/issues/1485
-      DSPACE_REST_SSL: '${DSPACE_REST_SSL}'
-      DSPACE_REST_HOST: ${DSPACE_REST_HOST}
-      DSPACE_REST_PORT: ${DSPACE_REST_PORT}
+      DSPACE_REST_SSL: 'false'
+      DSPACE_REST_HOST: localhost
+      DSPACE_REST_PORT: '8080'
       DSPACE_REST_NAMESPACE: /server
-    image: ${DOCKER_OWNER:-dspace}/dspace-angular:${DSPACE_VER:-dspace-7_x}-dist
+    #image: "${DOCKER_REGISTRY:-docker.io}/${DOCKER_OWNER:-dspace}/dspace-angular:${DSPACE_VER:-dspace-8.1}-dist"
+    image: rigeo:latest
     build:
       context: ..
       dockerfile: Dockerfile.dist
+    sysctls:
+      - net.ipv6.conf.all.disable_ipv6=1
     networks:
       dspacenet:
     ports:
@@ -37,3 +40,6 @@ services:
       target: 4000
     stdin_open: true
     tty: true
+    volumes:
+      - ../config/config.prod.yml:/app/config/config.prod.yml:ro
+      - ../config/config.dev.yml:/app/config/config.dev.yml:ro

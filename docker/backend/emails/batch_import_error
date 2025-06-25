@@ -1,0 +1,16 @@
+## Email sent to DSpace users when their batch import fails.
+##
+## Parameters: {0} the export error
+##             {1} the URL to the feedback page
+##
+##
+## See org.dspace.core.Email for information on the format of this file.
+##
+#set($subject = 'RIGEO - A importação em lote não foi concluída.')
+A importação em lote que você iniciou a partir da UI do DSpace não foi concluída pelo seguinte motivo:
+ ${params[0]}
+
+Para obter mais informações, você pode entrar em contato com o administrador do sistema:
+ ${params[1]}
+
+Equipe RIGEO

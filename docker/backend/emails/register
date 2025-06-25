@@ -1,0 +1,18 @@
+## E-mail sent to DSpace users when they register for an account
+##
+## Parameters: {0} is expanded to a special registration URL
+##
+## See org.dspace.core.Email for information on the format of this file.
+##
+#set($subject = "${config.get('dspace.name')} Registro de conta")
+#set($phone = ${config.get('mail.message.helpdesk.telephone')})
+Para concluir o registro de uma conta ${config.get('dspace.name')}, clique no link abaixo:
+
+  ${params[0]}
+
+Se precisar de ajuda com sua conta, envie um e-mail para ${config.get("mail.helpdesk")}
+#if( $phone )
+ou ligue para ${phone}.
+#end
+
+Equipe RIGEO

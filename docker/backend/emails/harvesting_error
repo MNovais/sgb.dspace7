@@ -1,0 +1,22 @@
+## E-mail sent to designated address when a harvest process fails
+##
+## Parameters: {0} Collection id
+##             {1} Date & time
+##             {2} Status flag
+##             {3} Exception message
+##             {4} Exception stack trace
+##
+## See org.dspace.core.Email for information on the format of this file.
+##
+#set($subject = "${config.get('dspace.name')}: Erro de Harvesting")
+O harvest na Coleção ${params[0]} falhou:
+
+Data:       	${params[1]}
+Status: 	    ${params[2]}
+
+${params[3]}
+
+Exceção:
+${params[4]}
+
+Equipe RIGEO

@@ -1,0 +1,26 @@
+## Sent to the person requesting a copy of a restricted document when the
+## request is denied.
+##
+## Parameters:
+##  {0} name of the requestor
+##  {1} Handle URL of the requested Item
+##  {2} title of the requested Item
+##  {3} name of the grantor
+##  {4} email address of the grantor (unused)
+##  {5} custom message sent by the grantor.
+#set($subject = 'Solicitação de cópia de documento restrito negada')
+Prezado ${params[0]}:
+
+Sua solicitação de cópia do(s) arquivo(s) do documento abaixo foi negada por ${params[3]}.
+
+    ${params[2]}
+    ${params[1]} 
+#if( $params[5] )
+
+Segue uma mensagem adicional de ${params[3]}:
+
+${params[5]}
+#end
+
+Atenciosamente,
+Equipe RIGEO
