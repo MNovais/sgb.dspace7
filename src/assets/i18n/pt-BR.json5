@@ -10336,5 +10336,7 @@
   "dropdown.clear":"Limpar seleção",
   "dropdown.clear.tooltip": "Limpa a opção selecionada",
   "sobre.breadcrumbs":"Sobre",
-
+  "form.date-picker.placeholder.year": "Ano",
+  "form.date-picker.placeholder.month": "Mês",
+  "form.date-picker.placeholder.day": "Dia",
 }
