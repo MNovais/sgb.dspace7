@@ -65,6 +65,7 @@ services:
     - ./backend/controlled-vocabularies/geodesc.xml:/dspace/config/controlled-vocabularies/geodesc.xml:ro
     - ./backend/spring/api/discovery.xml:/dspace/config/spring/api/discovery.xml:ro
     - ./backend/emails:/dspace/config/emails:ro
+    - ./backend/default.license:/dspace/config/default.license:ro
     entrypoint:
     - /bin/bash
     - '-c'
