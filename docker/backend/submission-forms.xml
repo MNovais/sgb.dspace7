@@ -210,7 +210,7 @@
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>subject</dc-element>
-                    <dc-qualifier>pt</dc-qualifier>
+                    <dc-qualifier></dc-qualifier>
                     <repeatable>true</repeatable>
                     <label>Palavras-Chave</label>
                     <input-type>tag</input-type>
