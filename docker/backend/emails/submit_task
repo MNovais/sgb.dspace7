@@ -16,7 +16,7 @@ Enviado por: ${params[2]}
 
 ${params[3]}
 
-Para reivindicar esta tarefa, visite sua página "My${config.get('dspace.shortname')}": ${params[4]}
+Para requerer esta tarefa, visite sua página "My${config.get('dspace.shortname')}": ${params[4]}
 
 Muito obrigado!
 
