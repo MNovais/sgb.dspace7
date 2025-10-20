@@ -265,7 +265,7 @@
                     <input-type>textarea</input-type>
                     <hint>Campo de livre preenchimento. Digite informações relevantes ou comentários que complementem a descrição do item.</hint>
                     <required></required>
-                    <type-bind>Presentation,Article,Atlas,Primer,Dissertation,Photo indexes,Image,'Image, 3-D',Report of Mineral Resources,Book,Map,multimidia,Preprint,Internal Report, Working Paper, Technical Report,Travel Report,Software,Other</type-bind>
+                    <type-bind>Presentation,Article,Atlas,Primer,Dissertation,Photo indexes,Image,'Image, 3-D',Report of Mineral Resources,Book,Map,multimidia,Preprint,Internal Report,Technical Report,Travel Report,Software,Working Paper,Other</type-bind>
                 </field>
             </row>
             <row>
