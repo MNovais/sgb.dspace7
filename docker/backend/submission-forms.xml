@@ -393,7 +393,7 @@
                     <dc-schema>dc</dc-schema>
                     <dc-element>degree</dc-element>
                     <dc-qualifier>program</dc-qualifier>
-                    <repeatable>true</repeatable>
+                    <repeatable>false</repeatable>
                     <label>Programa</label>
                     <input-type>onebox</input-type>
                     <hint>Entre com o nome do programa.</hint>
@@ -433,7 +433,7 @@
                     <dc-element>degree</dc-element>
                     <dc-qualifier>local</dc-qualifier>
                     <repeatable>false</repeatable>
-                    <label>Local</label>
+                    <label>Local da defesa</label>
                     <input-type>onebox</input-type>
                     <hint>Entre com o local da defesa.</hint>
                     <required/>
