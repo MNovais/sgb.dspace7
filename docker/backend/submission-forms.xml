@@ -1274,6 +1274,7 @@
                     <input-type>onebox</input-type>
                     <hint>Enter the start page number.</hint>
                     <required></required>
+                    <style>col-sm-6</style>
                 </field>
                 <field>
                     <dc-schema>oaire</dc-schema>
@@ -1284,6 +1285,7 @@
                     <input-type>onebox</input-type>
                     <hint>Enter the last page number.</hint>
                     <required></required>
+                    <style>col-sm-6</style>
                 </field>
             </row>
             <row>
@@ -1298,9 +1300,8 @@
                         have to hold down the "CTRL" or "Shift" key.
                     </hint>
                     <required>You must choose at least one type.</required>
+                    <style>col-sm-6</style>
                 </field>
-            </row>
-            <row>
                 <field>
                     <dc-schema>oaire</dc-schema>
                     <dc-element>version</dc-element>
@@ -1310,7 +1311,10 @@
                     <hint>Select the version of the resource. If the resource does not have that information, please
                         select "Not Applicable (or Unknown)".</hint>
                     <required></required>
+                    <style>col-sm-6</style>
                 </field>
+            </row>
+            <row>
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>language</dc-element>
@@ -1339,7 +1343,7 @@
                     <input-type>tag</input-type>
                     <hint>Enter appropriate subject keywords or phrases.</hint>
                     <required></required>
-                    <vocabulary>srsc</vocabulary>
+                   <!--  <vocabulary>srsc</vocabulary> -->
                 </field>
             </row>
 
