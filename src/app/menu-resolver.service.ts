@@ -50,6 +50,8 @@ import { OnClickMenuItemModel } from './shared/menu/menu-item/models/onclick.mod
 import { TextMenuItemModel } from './shared/menu/menu-item/models/text.model';
 import { MenuItemType } from './shared/menu/menu-item-type.model';
 import { MenuState } from './shared/menu/menu-state.model';
+import { ExternalLinkMenuItemComponent } from './shared/menu/menu-item/external-link-menu-item.component';
+import { ExternalLinkMenuItemModel } from './shared/menu/menu-item/models/external-link.model';
 
 /**
  * Creates all of the app's menus
@@ -152,8 +154,35 @@ export class MenuResolverService  {
               model: {
                 type: MenuItemType.LINK,
                 text: 'menu.section.sobre',
-                link:'/sobre'
+              } as TextMenuItemModel,
+            }
+          );
+          menuList.push(
+            /* Apresentação */
+            {
+              id: 'apresentacao',
+              parentID: 'sobre',
+              active: false,
+              visible: true,
+              model: {
+                type: MenuItemType.LINK,
+                text: 'menu.section.apresentacao',
+                link: `/sobre`
               } as LinkMenuItemModel,
+            }
+          );
+          menuList.push(
+            /* Política do RIGEO */
+            {
+              id: 'politica_rigeo',
+              parentID: 'sobre',
+              active: false,
+              visible: true,
+              model: {
+                type: MenuItemType.EXTERNAL,
+                text: 'menu.section.politica.rigeo',
+                href: `/assets/dspace/files/mtc0902_politica_repositorio_institucional.pdf`
+              } as ExternalLinkMenuItemModel,
             }
           );
         }

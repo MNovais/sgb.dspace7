@@ -10340,4 +10340,7 @@
   "form.date-picker.placeholder.month": "Mês",
   "form.date-picker.placeholder.day": "Dia",
   "item.edit.bitstreams.info-alert": "Os Bitstream podem ser reordenados dentro de seus pacotes segurando a alça de arrasto e movendo o mouse. Alternativamente, os Bitstreams podem ser movidos usando o teclado da seguinte maneira: Selecione o bitstream pressionando Enter quando a alça de arrasto do bitstream estiver em foco. Mova o bitstream para cima ou para baixo usando as teclas de seta. Pressione Enter novamente para confirmar a posição atual do bitstream.",
+
+  "menu.section.apresentacao":"Apresentação",
+  "menu.section.politica.rigeo":"Política do RIGEO",
 }
