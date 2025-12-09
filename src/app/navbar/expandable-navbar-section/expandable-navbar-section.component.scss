@@ -7,12 +7,12 @@
     overflow: hidden;
     @include media-breakpoint-down(sm) {
       border: 0;
-      background-color: var(--ds-expandable-navbar-bg);
+      background-color: var(--ds-header-bg);
     }
     @include media-breakpoint-up(md) {
       border-top-left-radius: 0;
       border-top-right-radius: 0;
-      background-color: var(--ds-navbar-dropdown-bg);
+      background-color: var(--ds-header-bg);
     }
   }
 
