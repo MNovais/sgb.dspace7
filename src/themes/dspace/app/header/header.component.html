@@ -5,7 +5,12 @@
          [attr.role]="(isMobile$ | async) ? 'navigation' : 'presentation'"
          [attr.aria-label]="(isMobile$ | async) ? ('nav.main.description' | translate) : null"
          class="h-100 flex-fill d-flex flex-row flex-nowrap justify-content-start align-items-center gapx-3">
-      <img id="header-logo" src="assets/dspace/images/dspace-logo-only.png" [attr.alt]="'menu.header.image.logo' | translate"/>
+      
+      
+      <a href="https://www.sgb.gov.br/" target="_blank">
+        <img id="header-logo" src="assets/dspace/images/dspace-logo-only.png" [attr.alt]="'menu.header.image.logo' | translate"/>
+      </a>
+      
       <a class="d-block my-2 my-md-0 homelink" routerLink="/home" [attr.aria-label]="'home.title' | translate">
         <!-- <img src="assets/images/dspace-logo.svg" [attr.alt]="'menu.header.image.logo' | translate"/> -->
         <span>
