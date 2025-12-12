@@ -4140,7 +4140,7 @@
   "item.page.subject": "Palavras-chave",
 
   // "item.page.uri": "URI",
-  "item.page.uri": "URI",
+  "item.page.uri": "URI - Use o link abaixo para citar este item",
 
   // "item.page.bitstreams.view-more": "Show more",
   "item.page.bitstreams.view-more": "Mostrar mais",
